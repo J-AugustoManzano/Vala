@@ -1,0 +1,50 @@
+// C06EX06
+
+enum Meses {
+    JANEIRO,
+    FEVEREIRO,
+    MARCO,
+    ABRIL,
+    MAIO,
+    JUNHO,
+    JULHO,
+    AGOSTO,
+    SETEMBRO,
+    OUTUBRO,
+    NOVEMBRO,
+    DEZEMBRO
+}
+
+int main() {
+    Meses mes;
+
+    print("Teste de acesso, lista enumerada\n\n");
+
+    mes = Meses.JANEIRO;
+
+    print("Mes definido = %d", mes);
+    print(" em extenso equivale a ");
+
+    switch (mes) {
+        case Meses.JANEIRO:   print("janeiro");      break;
+        case Meses.FEVEREIRO: print("fevereiro");    break;
+        case Meses.MARCO:     print("marco");        break;
+        case Meses.ABRIL:     print("abril");        break;
+        case Meses.MAIO:      print("maio");         break;
+        case Meses.JUNHO:     print("junho");        break;
+        case Meses.JULHO:     print("julho");        break;
+        case Meses.AGOSTO:    print("agosto");       break;
+        case Meses.SETEMBRO:  print("setembro");     break;
+        case Meses.OUTUBRO:   print("outubro");      break;
+        case Meses.NOVEMBRO:  print("novembro");     break;
+        case Meses.DEZEMBRO:  print("dezembro");     break;
+        default:              print("Mes invalido"); break;
+    }
+
+    print("\n\n");
+
+    stdout.printf("Tecle <Enter> para encerrar... ");
+    stdin.read_line();
+
+    return 0;
+}
